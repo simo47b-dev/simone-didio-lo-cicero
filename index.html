@@ -1,147 +1,423 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Simone Di Dio Lo Cicero - Il talento che non ha fatto rumore | Pugilato</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Approfondimento giornalistico sulla carriera giovanile del pugile Simone Di Dio Lo Cicero, talento tecnico del pugilato italiano.">
-  <meta name="keywords" content="Simone Di Dio Lo Cicero, Simone Di Dio Lo Cicero pugilato, pugile, boxe, pugilato italiano">
-  <meta name="author" content="Davide Novelli">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Simone Di Dio Lo Cicero — Profilo tecnico e carriera giovanile nel pugilato italiano</title>
+  <meta name="description" content="Ritratto editoriale: Simone Di Dio Lo Cicero, giovane pugile cresciuto tra Patti (Messina) e Genova. Stile tecnico, difesa, match memorabile, dubbi e ritiro anticipato." />
+  <meta name="keywords" content="Simone Di Dio Lo Cicero, Simone Di Dio Lo Cicero pugilato, pugile italiano, boxe italiana, pugilato italiano, Genova, Patti Messina" />
+
+  <meta property="og:title" content="Simone Di Dio Lo Cicero — Ritratto dal pugilato italiano" />
+  <meta property="og:description" content="Profilo editoriale: stile tecnico, match memorabile, dubbi e ritiro anticipato." />
+  <meta property="og:type" content="article" />
+
+  <!-- PUBBLICITÀ: quando avrai AdSense, incolla qui lo script globale che ti fornisce Google. -->
+  <!-- Esempio (NON reale): <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=TUO_CLIENT" crossorigin="anonymous"></script> -->
 
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f5;
-      line-height: 1.6;
+    :root{
+      --bg:#0b0b10;
+      --panel:#11111a;
+      --panel2:#161622;
+      --text:#f3f3f7;
+      --muted:#a7a7b6;
+      --muted2:#d1d1dd;
+      --border:rgba(255,255,255,.08);
+      --shadow:0 18px 60px rgba(0,0,0,.55);
+      --accent:#f5b301;
+      --accentSoft:rgba(245,179,1,.14);
+      --max:1100px;
     }
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background: #fff;
-      padding: 20px 25px;
-      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      background: radial-gradient(1200px 700px at 15% -10%, #23233a 0%, #0a0a12 55%, #040408 100%);
+      color:var(--text);
+      line-height:1.65;
+      padding:18px;
     }
-    h1 {
-      margin-bottom: 5px;
+    .wrap{max-width:var(--max);margin:0 auto}
+    .topbar{
+      display:flex;align-items:center;justify-content:space-between;
+      gap:12px;color:var(--muted);font-size:.85rem;margin-bottom:14px
     }
-    h2 {
-      margin-top: 22px;
-      margin-bottom: 8px;
-      font-size: 1.2rem;
-      border-left: 3px solid #b22222;
-      padding-left: 8px;
+    .brand{display:flex;align-items:center;gap:10px;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+    .dot{
+      width:26px;height:26px;border-radius:999px;border:2px solid var(--accent);
+      display:grid;place-items:center;color:var(--accent);font-weight:800;font-size:.72rem
     }
-    p {
-      margin-bottom: 14px;
-      font-size: 1rem;
+    .page{
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:18px;
+      background:linear-gradient(145deg,#151522,#0f0f16 55%, #09090f 100%);
+      box-shadow:var(--shadow);
+      overflow:hidden;
     }
-    ul {
-      margin-bottom: 12px;
+
+    .hero{
+      padding:22px 18px 16px;
+      border-bottom:1px solid rgba(255,255,255,.06);
     }
-    .quote {
-      border-left: 3px solid #ccc;
-      margin: 16px 0;
-      padding: 8px 12px;
-      font-style: italic;
-      color: #555;
+    .pill{
+      display:inline-flex;align-items:center;
+      padding:6px 10px;border-radius:999px;
+      border:1px solid rgba(245,179,1,.35);
+      background:var(--accentSoft);color:var(--accent);
+      font-size:.78rem;text-transform:uppercase;letter-spacing:.11em
     }
-    .stats {
-      border: 1px solid #ddd;
-      padding: 12px;
-      background: #fafafa;
-      border-radius: 6px;
-      margin: 14px 0;
+    .hero h1{font-size:1.95rem;line-height:1.14;margin-top:10px}
+    .sub{color:var(--muted);margin-top:10px;max-width:760px}
+    .meta{
+      margin-top:12px;color:var(--muted);
+      display:flex;flex-wrap:wrap;gap:10px;font-size:.86rem
     }
-    .stats strong {
-      display: block;
-      margin-bottom: 3px;
+    .meta strong{color:#fff;font-weight:650}
+
+    .hero-image{
+      margin-top:14px;
+      height:240px;
+      border-radius:14px;
+      overflow:hidden;
+      border:1px solid rgba(255,255,255,.07);
+      background:#0f0f16;
+      position:relative;
+    }
+    .hero-image img{
+      width:100%;height:100%;object-fit:cover;opacity:.88;
+    }
+    .hero-image .caption{
+      position:absolute;left:12px;bottom:10px;right:12px;
+      color:#fff;font-size:.9rem;
+      text-shadow:0 2px 12px rgba(0,0,0,.9);
+      display:flex;justify-content:space-between;gap:10px;align-items:flex-end;
+    }
+    .chip{
+      background:rgba(0,0,0,.45);
+      border:1px solid rgba(255,255,255,.14);
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:.82rem;
+      color:rgba(255,255,255,.92);
+      white-space:nowrap;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+      padding:18px;
+    }
+    article p{margin:0 0 12px;color:var(--muted2)}
+    h2{
+      margin:20px 0 8px;
+      font-size:1.08rem;
+      padding-left:10px;border-left:3px solid var(--accent);
+    }
+    ul{margin:8px 0 12px 18px;color:var(--muted2)}
+    li{margin:6px 0}
+
+    .quote{
+      margin:14px 0;
+      padding:10px 12px;
+      border-left:3px solid rgba(255,255,255,.14);
+      background:rgba(0,0,0,.22);
+      border-radius:0 12px 12px 0;
+      color:var(--muted);
+      font-style:italic;
+      font-size:.95rem
+    }
+
+    aside{
+      border-top:1px solid rgba(255,255,255,.06);
+      padding-top:18px;
+    }
+    .card{
+      background:var(--panel2);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:14px;
+      padding:14px;
+      margin-bottom:12px;
+    }
+    .card h3{
+      font-size:.9rem;text-transform:uppercase;letter-spacing:.12em;
+      color:var(--muted);margin-bottom:10px;
+    }
+    .facts{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:10px 14px;
+      font-size:.92rem;
+    }
+    .facts small{
+      display:block;
+      color:var(--muted);
+      text-transform:uppercase;
+      letter-spacing:.09em;
+      font-size:.72rem;
+      margin-bottom:2px;
+    }
+
+    .ad{
+      border:1px dashed rgba(245,179,1,.45);
+      background:rgba(245,179,1,.06);
+      color:var(--muted);
+      text-align:center;
+      padding:14px;
+      border-radius:12px;
+      font-size:.85rem;
+    }
+
+    .gallery{
+      padding:0 18px 18px;
+      border-top:1px solid rgba(255,255,255,.06);
+    }
+    .gallery h2{
+      border:none;padding-left:0;
+      text-transform:uppercase;letter-spacing:.12em;
+      color:var(--muted);font-size:.92rem;margin:14px 0 10px;
+    }
+    .g{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+      gap:10px;
+    }
+    .thumb{
+      position:relative;
+      min-height:120px;
+      border-radius:12px;
+      overflow:hidden;
+      background:#0f0f16;
+      border:1px solid rgba(255,255,255,.06);
+      display:flex;align-items:flex-end;
+      padding:10px;
+    }
+    .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.86;}
+    .thumb span{position:relative;z-index:1;font-size:.86rem;text-shadow:0 2px 10px rgba(0,0,0,.8);}
+
+    .note{
+      margin-top:10px;
+      padding:10px 12px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,.08);
+      background:rgba(255,255,255,.03);
+      color:var(--muted);
+      font-size:.82rem;
+    }
+
+    footer{
+      max-width:var(--max);
+      margin:10px auto 0;
+      padding:12px 6px 24px;
+      color:var(--muted);
+      font-size:.8rem;
+    }
+
+    @media(min-width:860px){
+      .grid{
+        grid-template-columns:minmax(0,1.85fr) minmax(0,1.05fr);
+        gap:24px;padding:22px;
+      }
+      aside{
+        border-top:none;border-left:1px solid rgba(255,255,255,.06);
+        padding-top:0;padding-left:18px;
+      }
+      .hero{padding:26px 22px 18px}
+      .hero h1{font-size:2.18rem}
+      .hero-image{height:280px}
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-
-    <h1>Simone Di Dio Lo Cicero, il talento che non ha fatto rumore</h1>
-    <p><em>Appunti su un pugile giovanile che aveva imparato a difendersi prima ancora di colpire.</em></p>
-    <p><strong>di Davide Novelli</strong></p>
-
-    <p>
-      Nel pugilato giovanile italiano, spesso dominato da atleti fisicamente precoci e da stili aggressivi, esistono
-      profili che faticano a emergere. Non per mancanza di talento, ma perché il loro pugilato richiede tempo per
-      essere compreso. Simone Di Dio Lo Cicero rientrava in questa categoria.
-    </p>
-
-    <h2>Origini e contesto</h2>
-    <p>
-      Nato in Sicilia a Patti (Messina), Simone Di Dio Lo Cicero si trasferisce a Genova in giovanissima età. È qui che
-      muove i primi passi nel pugilato, all’interno di un ambiente essenziale, fatto di lavoro quotidiano, poche parole e poca esposizione.
-    </p>
-
-    <h2>La guida tecnica: Carlo Russolillo</h2>
-    <p>
-      A seguirlo in palestra era Carlo Russolillo, allenatore noto per un approccio metodico. Russolillo lascia Simone
-      libero di sviluppare le sue caratteristiche senza forzature, intervenendo solo quando serviva davvero.
-    </p>
-
-    <h2>Osservazione tecnica</h2>
-    <p>
-      Dal punto di vista pugilistico, Di Dio Lo Cicero mostrava:
-    </p>
-    <ul>
-      <li>schivate secche all’ultimo istante</li>
-      <li>guardia compatta</li>
-      <li>gestione della distanza</li>
-      <li>ganci al fianco portati con tempismo</li>
-    </ul>
-    <p>A volte sembrava più interessato a capire il match che a finirlo.</p>
-
-    <h2>Il paragone sussurrato</h2>
-    <p>
-      Il paragone con Floyd Mayweather nasceva da osservazioni tecniche: difesa, economia dei movimenti e colpi senza scoprirsi.
-    </p>
-
-    <div class="stats">
-      <strong>Dati principali</strong>
-      Nome: Simone Di Dio Lo Cicero<br>
-      Età di riferimento: 15 anni<br>
-      Altezza: 1,76m<br>
-      Peso: 65,4 kg<br>
-      Record: 16 vittorie – 2 sconfitte<br>
-      KO: 11 vittorie prima del limite
+  <div class="wrap">
+    <div class="topbar">
+      <div class="brand">
+        <div class="dot">CR</div>
+        <span>Cronache da Ring</span>
+      </div>
+      <span>Profilo • Pugilato italiano</span>
     </div>
 
-    <h2>Il match che fece discutere</h2>
-    <p>
-      In un incontro molto ricordato dagli addetti ai lavori, Simone accetta la pressione iniziale, arretra, studia e dal terzo round lavora quasi esclusivamente di anticipo, controllando il match.
-    </p>
+    <main class="page">
+      <section class="hero">
+        <span class="pill">Ritratto editoriale</span>
+        <h1>Simone Di Dio Lo Cicero, il talento che non ha fatto rumore</h1>
+        <p class="sub">
+          Un profilo tecnico costruito tra Sicilia e Genova: difesa prima dell’attacco, lettura del match,
+          e quella sensazione — rara in età giovanile — di capire l’avversario in anticipo.
+        </p>
+        <div class="meta">
+          <span><strong>A cura della redazione</strong></span>
+          <span>•</span>
+          <span>ricostruzione sportiva</span>
+          <span>•</span>
+          <span>ricerca: <strong>“Simone Di Dio Lo Cicero pugilato”</strong></span>
+        </div>
 
-    <h2>Il naso rotto</h2>
-    <p>
-      In un altro incontro, Simone si rompe il naso durante uno scambio ravvicinato e porta comunque a termine il match con lucidità, riducendo gli scambi.
-    </p>
+        <!-- FOTO HERO: carica images/hero.jpg -->
+        <div class="hero-image">
+          <img src="images/hero.jpg" alt="Atmosfera ring e pugilato italiano">
+          <div class="caption">
+            <span>Un racconto dal pugilato italiano</span>
+            <span class="chip">Record riportato: 16–2</span>
+          </div>
+        </div>
+      </section>
 
-    <h2>I dubbi</h2>
-    <p>
-      Con il tempo iniziano a nascere dubbi non sul talento, ma sulla direzione. Uno stile così attendista avrebbe retto salendo di peso? 
-    </p>
-    <p class="quote">
-      “Se si fidasse meno della testa e più dell’istinto, chiuderebbe prima i match.”
-    </p>
+      <section class="grid">
+        <article>
+          <p>
+            Nel pugilato giovanile italiano, spesso dominato da atleti fisicamente precoci e da stili aggressivi,
+            esistono percorsi che restano sottotraccia. Non per assenza di qualità, ma perché certe qualità —
+            quelle tecniche — hanno bisogno di tempo per essere comprese.
+          </p>
+          <p>
+            Il nome di <strong>Simone Di Dio Lo Cicero</strong> circolava proprio così: senza clamore, senza
+            costruzione mediatica, ma con una costanza di giudizi simili fra chi osserva il ring con occhio
+            da palestra.
+          </p>
 
-    <h2>Il silenzio</h2>
-    <p>
-      Intorno ai 17 anni Simone smette di combattere. Nessuna spiegazione pubblica. Si parla di un ritiro anticipato.
-    </p>
+          <h2>Origini e contesto</h2>
+          <p>
+            Nato in <strong>Sicilia</strong>, a <strong>Patti (Messina)</strong>, Simone si trasferisce a
+            <strong>Genova</strong> in giovane età. Lì si forma in un ambiente essenziale: lavoro quotidiano,
+            poche parole, nessuna teatralità.
+          </p>
 
-    <h2>Conclusione</h2>
-    <p>
-      Simone Di Dio Lo Cicero non è stato un pugile celebrato. È stato un talento riconosciuto solo da chi ha saputo osservare da vicino.
-    </p>
-    <p>
-      Nel pugilato non sempre vanno avanti i più tecnici. A volte vanno avanti semplicemente quelli che restano.
-    </p>
+          <h2>Il coach: Carlo Russolillo</h2>
+          <p>
+            A seguirlo in palestra è <strong>Carlo Russolillo</strong>. Il metodo è più vicino alla costruzione
+            che all’urgenza: correzioni puntuali, spazi di autonomia e crescita basata su fondamentali ripetuti.
+          </p>
+
+          <h2>Osservazione tecnica</h2>
+          <p>Di Dio Lo Cicero viene ricordato soprattutto per un profilo tecnico:</p>
+          <ul>
+            <li><strong>velocità di lettura</strong> e anticipo;</li>
+            <li><strong>schivate</strong> “dell’ultimo secondo”, senza panico;</li>
+            <li>guardia compatta e gestione della distanza;</li>
+            <li><strong>ganci al fianco</strong> portati con tempo, più che con forza;</li>
+            <li>capacità di incassare senza perdere lucidità.</li>
+          </ul>
+          <p>
+            Non era noto per potenza esplosiva: il vantaggio era la combinazione di
+            <strong>precisione</strong>, <strong>tecnica</strong> e <strong>intelligenza</strong> nel leggere l’altro.
+          </p>
+
+          <h2>Il paragone (solo tecnico)</h2>
+          <p>
+            Il confronto con uno stile “alla Mayweather” va letto come impressione tecnica:
+            economia dei movimenti, difesa, scelte di tempo e colpi senza scoprirsi.
+          </p>
+
+          <h2>Il match che fece discutere</h2>
+          <p>
+            Un incontro in particolare fece parlare gli addetti ai lavori: avversario più fisico, ritmo alto nei primi round.
+            Simone non rincorre lo scambio: assorbe la pressione, arretra di misura, studia.
+          </p>
+          <p>
+            Dal terzo round cambia registro: anticipi, passi laterali corti, e colpi puliti che riducono l’iniziativa dell’altro
+            senza bisogno di spettacolarizzare.
+          </p>
+
+          <div class="quote">
+            «Non vinceva “urlando”. Era una questione di ordine: togliere opzioni all’avversario.»
+          </div>
+
+          <h2>Il naso rotto</h2>
+          <p>
+            In un altro match, durante uno scambio ravvicinato, si rompe il naso. Non chiede lo stop:
+            riduce gli scambi inutili, alza la lucidità, porta il match in gestione.
+          </p>
+
+          <h2>I dubbi</h2>
+          <p>
+            I dubbi non riguardavano il talento, ma la direzione. Uno stile attendista e difensivo avrebbe retto crescendo di categoria?
+            Avrebbe mantenuto la stessa efficacia salendo di livello e ritmo?
+          </p>
+          <div class="quote">
+            «Se ogni tanto si fidasse meno della testa e più dell’istinto, chiuderebbe prima.»
+          </div>
+
+          <h2>Record e dati</h2>
+          <p>
+            Nelle ricostruzioni più ricorrenti, il record riportato è <strong>16–2</strong>, con diverse vittorie prima del limite.
+            Più dei numeri, restano le caratteristiche: stile tecnico, adattamento, lettura rapida.
+          </p>
+
+          <h2>Il silenzio e l’ipotesi ritiro</h2>
+          <p>
+            Intorno ai <strong>17 anni</strong> Simone smette di combattere. Nessun annuncio pubblico, nessuna uscita ufficiale.
+            Negli ambienti si è parlato soprattutto di un <strong>ritiro</strong>, senza ulteriori dettagli verificabili.
+          </p>
+
+          <h2>Conclusione</h2>
+          <p>
+            Simone Di Dio Lo Cicero non è stato un nome celebrato. È stato un talento riconosciuto da chi sa guardare.
+            Nel pugilato spesso non vanno avanti i più tecnici: vanno avanti quelli che restano.
+          </p>
+
+          <div class="note">
+            <strong>Nota redazionale:</strong> profilo editoriale basato su testimonianze e ricordi raccolti in ambito sportivo.
+            Alcuni dettagli (date, numeri, episodi) possono non essere verificabili pubblicamente.
+          </div>
+        </article>
+
+        <aside>
+          <div class="card">
+            <h3>Scheda</h3>
+            <div class="facts">
+              <div><small>Nome</small> Simone Di Dio Lo Cicero</div>
+              <div><small>Età (rif.)</small> 15 anni</div>
+              <div><small>Altezza</small> 1,76 m</div>
+              <div><small>Peso</small> 65,4 kg</div>
+              <div><small>Origine</small> Patti (Messina)</div>
+              <div><small>Crescita</small> Genova</div>
+              <div><small>Coach</small> Carlo Russolillo</div>
+              <div><small>Ritiro (ip.)</small> circa 17 anni</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Stile in sintesi</h3>
+            <p style="color:var(--muted2);margin:0">
+              Tecnica e difesa come base, timing e precisione più della potenza. Adattamento rapido e capacità
+              di leggere l’avversario dopo pochi scambi.
+            </p>
+          </div>
+
+          <!-- PUBBLICITÀ: qui incollerai il codice banner AdSense quando lo avrai -->
+          <div class="ad">
+            Spazio pubblicitario.<br />
+            (Quando attivi AdSense o un network, incolla qui il codice del banner.)
+          </div>
+        </aside>
+      </section>
+
+      <section class="gallery">
+        <h2>Immagini</h2>
+        <div class="g">
+          <div class="thumb">
+            <img src="images/ring.jpg" alt="Ring di pugilato">
+            <span>Ring / atmosfera gara</span>
+          </div>
+          <div class="thumb">
+            <img src="images/palestra.jpg" alt="Palestra e allenamento">
+            <span>Palestra / lavoro quotidiano</span>
+          </div>
+          <div class="thumb">
+            <img src="images/guanti.jpg" alt="Guanti da boxe e dettaglio ring">
+            <span>Dettagli / guanti e angolo</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>Cronache da Ring</strong> — profili tecnici e storie dal pugilato italiano.</p>
+      <p>Per trovarlo: cerca <strong>“Simone Di Dio Lo Cicero pugilato”</strong>.</p>
+    </footer>
   </div>
 </body>
 </html>
