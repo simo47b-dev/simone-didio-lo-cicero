@@ -1,113 +1,161 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Simone Di Dio Lo Cicero — Profilo tecnico e carriera giovanile nel pugilato italiano</title>
-  <meta name="description" content="Ritratto editoriale: Simone Di Dio Lo Cicero, giovane pugile cresciuto tra Patti (Messina) e Genova. Stile tecnico, difesa, match memorabile, dubbi e ritiro anticipato." />
-  <meta name="keywords" content="Simone Di Dio Lo Cicero, Simone Di Dio Lo Cicero pugilato, pugile italiano, boxe italiana, pugilato italiano, Genova, Patti Messina" />
+  <title>Simone Di Dio Lo Cicero: profilo tecnico, carriera giovanile e ipotesi ritiro | Cronache da Ring</title>
+  <meta name="description" content="Ritratto editoriale su Simone Di Dio Lo Cicero (Patti–Genova): stile tecnico, timing, match chiave, dubbi e ipotesi ritiro. Cronache da Ring." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://simo47b-dev.github.io/simone-didio-lo-cicero/" />
 
-  <meta property="og:title" content="Simone Di Dio Lo Cicero — Ritratto dal pugilato italiano" />
-  <meta property="og:description" content="Profilo editoriale: stile tecnico, match memorabile, dubbi e ritiro anticipato." />
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Cronache da Ring" />
+  <meta property="og:title" content="Simone Di Dio Lo Cicero, il talento che non ha fatto rumore" />
+  <meta property="og:description" content="Ritratto editoriale: stile tecnico, match chiave, dubbi e ipotesi ritiro." />
   <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://simo47b-dev.github.io/simone-didio-lo-cicero/" />
 
-  <!-- PUBBLICITÀ: quando avrai AdSense, incolla qui lo script globale che ti fornisce Google. -->
+  <!-- SEO strutturata (NewsArticle) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"NewsArticle",
+    "headline":"Simone Di Dio Lo Cicero, il talento che non ha fatto rumore",
+    "description":"Ritratto editoriale su Simone Di Dio Lo Cicero: stile tecnico, match chiave, dubbi e ipotesi ritiro.",
+    "publisher":{"@type":"Organization","name":"Cronache da Ring"},
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://simo47b-dev.github.io/simone-didio-lo-cicero/"},
+    "inLanguage":"it-IT"
+  }
+  </script>
+
+  <!-- PUBBLICITÀ: quando avrai un account AdSense (o altro network), incolla QUI lo script globale che ti forniscono. -->
   <!-- Esempio (NON reale): <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=TUO_CLIENT" crossorigin="anonymous"></script> -->
 
   <style>
     :root{
-      --bg:#0b0b10;
-      --panel:#11111a;
-      --panel2:#161622;
-      --text:#f3f3f7;
-      --muted:#a7a7b6;
-      --muted2:#d1d1dd;
-      --border:rgba(255,255,255,.08);
-      --shadow:0 18px 60px rgba(0,0,0,.55);
+      --text:#f2f4ff;
+      --muted:#a7afc2;
+      --muted2:#cbd2e7;
+      --line:rgba(255,255,255,.08);
       --accent:#f5b301;
-      --accentSoft:rgba(245,179,1,.14);
-      --max:1100px;
+      --accent2:#66d9ff;
+      --shadow:0 18px 60px rgba(0,0,0,.55);
+      --max:1120px;
+      --radius:16px;
     }
-    *{box-sizing:border-box;margin:0;padding:0}
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
     body{
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background: radial-gradient(1200px 700px at 15% -10%, #23233a 0%, #0a0a12 55%, #040408 100%);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", sans-serif;
+      background:
+        radial-gradient(1000px 700px at 10% -10%, rgba(102,217,255,.16), transparent 55%),
+        radial-gradient(900px 700px at 110% 10%, rgba(245,179,1,.18), transparent 50%),
+        linear-gradient(180deg, #070812, #04040a 60%, #05050b);
       color:var(--text);
-      line-height:1.65;
+      line-height:1.7;
       padding:18px;
     }
+    a{color:inherit}
     .wrap{max-width:var(--max);margin:0 auto}
     .topbar{
       display:flex;align-items:center;justify-content:space-between;
-      gap:12px;color:var(--muted);font-size:.85rem;margin-bottom:14px
+      gap:14px;margin-bottom:12px;color:var(--muted);
+      font-size:.9rem
     }
-    .brand{display:flex;align-items:center;gap:10px;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
-    .dot{
-      width:26px;height:26px;border-radius:999px;border:2px solid var(--accent);
-      display:grid;place-items:center;color:var(--accent);font-weight:800;font-size:.72rem
+    .brand{
+      display:flex;align-items:center;gap:10px;
+      letter-spacing:.14em;text-transform:uppercase;font-size:.78rem
     }
+    .mark{
+      width:28px;height:28px;border-radius:999px;
+      border:2px solid var(--accent);
+      display:grid;place-items:center;font-weight:900;color:var(--accent);
+      box-shadow:0 0 0 6px rgba(245,179,1,.08);
+    }
+    .nav{
+      display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end
+    }
+    .nav a{
+      text-decoration:none;
+      padding:6px 10px;border:1px solid var(--line);
+      border-radius:999px;background:rgba(255,255,255,.03);
+      color:var(--muted)
+    }
+    .nav a:hover{border-color:rgba(245,179,1,.5);color:var(--text)}
     .page{
-      border:1px solid rgba(255,255,255,.06);
-      border-radius:18px;
-      background:linear-gradient(145deg,#151522,#0f0f16 55%, #09090f 100%);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:linear-gradient(145deg, rgba(20,24,39,.9), rgba(10,12,20,.88));
       box-shadow:var(--shadow);
       overflow:hidden;
     }
-
-    .hero{
+    header.hero{
       padding:22px 18px 16px;
-      border-bottom:1px solid rgba(255,255,255,.06);
+      border-bottom:1px solid var(--line);
     }
-    .pill{
+    .crumbs{
+      display:flex;gap:8px;flex-wrap:wrap;
+      color:var(--muted);font-size:.86rem
+    }
+    .crumbs span{opacity:.8}
+    .tagrow{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+    .tag{
       display:inline-flex;align-items:center;
       padding:6px 10px;border-radius:999px;
       border:1px solid rgba(245,179,1,.35);
-      background:var(--accentSoft);color:var(--accent);
+      background:rgba(245,179,1,.12);
+      color:var(--accent);
       font-size:.78rem;text-transform:uppercase;letter-spacing:.11em
     }
-    .hero h1{font-size:1.95rem;line-height:1.14;margin-top:10px}
-    .sub{color:var(--muted);margin-top:10px;max-width:760px}
-    .meta{
-      margin-top:12px;color:var(--muted);
-      display:flex;flex-wrap:wrap;gap:10px;font-size:.86rem
+    h1{margin:12px 0 8px;font-size:2.05rem;line-height:1.15}
+    .sub{color:var(--muted2);max-width:900px;margin:0 0 12px;font-size:1.03rem}
+    .byline{
+      display:flex;gap:10px;flex-wrap:wrap;
+      color:var(--muted);font-size:.9rem;padding-top:6px
     }
-    .meta strong{color:#fff;font-weight:650}
+    .byline strong{color:var(--text);font-weight:700}
+    .byline .dot{opacity:.5}
 
-    .hero-image{
+    /* Copertina: placeholder elegante finché non mettiamo la foto reale */
+    .media{
       margin-top:14px;
-      height:240px;
       border-radius:14px;
+      border:1px solid rgba(255,255,255,.08);
+      background:
+        radial-gradient(520px 260px at 20% 20%, rgba(102,217,255,.16), transparent 55%),
+        radial-gradient(520px 260px at 90% 40%, rgba(245,179,1,.18), transparent 55%),
+        linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
       overflow:hidden;
-      border:1px solid rgba(255,255,255,.07);
-      background:#0f0f16;
       position:relative;
+      height:260px;
+      display:flex;align-items:flex-end;
     }
-    .hero-image img{
-      width:100%;height:100%;object-fit:cover;opacity:.88;
-    }
-    .hero-image .caption{
-      position:absolute;left:12px;bottom:10px;right:12px;
-      color:#fff;font-size:.9rem;
-      text-shadow:0 2px 12px rgba(0,0,0,.9);
-      display:flex;justify-content:space-between;gap:10px;align-items:flex-end;
+    .media .cap{
+      width:100%;
+      display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+      padding:12px 12px;
+      background:linear-gradient(180deg, transparent, rgba(0,0,0,.55));
+      color:rgba(255,255,255,.94);
+      font-size:.92rem;
     }
     .chip{
-      background:rgba(0,0,0,.45);
+      background:rgba(0,0,0,.38);
       border:1px solid rgba(255,255,255,.14);
       border-radius:999px;
       padding:6px 10px;
-      font-size:.82rem;
+      font-size:.84rem;
       color:rgba(255,255,255,.92);
       white-space:nowrap;
     }
 
     .grid{
       display:grid;
-      grid-template-columns:1fr;
+      grid-template-columns: 1fr;
       gap:18px;
       padding:18px;
     }
+    article{padding:2px 2px 0}
     article p{margin:0 0 12px;color:var(--muted2)}
     h2{
       margin:20px 0 8px;
@@ -116,48 +164,56 @@
     }
     ul{margin:8px 0 12px 18px;color:var(--muted2)}
     li{margin:6px 0}
-
     .quote{
       margin:14px 0;
-      padding:10px 12px;
-      border-left:3px solid rgba(255,255,255,.14);
-      background:rgba(0,0,0,.22);
+      padding:12px 14px;
+      border-left:3px solid rgba(102,217,255,.45);
+      background:rgba(102,217,255,.06);
       border-radius:0 12px 12px 0;
-      color:var(--muted);
+      color:var(--muted2);
       font-style:italic;
-      font-size:.95rem
+    }
+    .callout{
+      margin:14px 0;
+      padding:12px 14px;
+      border:1px solid rgba(245,179,1,.22);
+      background:rgba(245,179,1,.06);
+      border-radius:12px;
+      color:var(--muted2);
+      font-size:.95rem;
     }
 
     aside{
-      border-top:1px solid rgba(255,255,255,.06);
+      border-top:1px solid var(--line);
       padding-top:18px;
     }
     .card{
-      background:var(--panel2);
-      border:1px solid rgba(255,255,255,.06);
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--line);
       border-radius:14px;
       padding:14px;
       margin-bottom:12px;
     }
     .card h3{
-      font-size:.9rem;text-transform:uppercase;letter-spacing:.12em;
-      color:var(--muted);margin-bottom:10px;
+      margin:0 0 10px;
+      font-size:.86rem;
+      text-transform:uppercase;
+      letter-spacing:.12em;
+      color:var(--muted);
     }
     .facts{
       display:grid;
       grid-template-columns:1fr 1fr;
       gap:10px 14px;
-      font-size:.92rem;
+      font-size:.95rem;
+      color:var(--muted2);
     }
     .facts small{
-      display:block;
-      color:var(--muted);
-      text-transform:uppercase;
-      letter-spacing:.09em;
-      font-size:.72rem;
-      margin-bottom:2px;
+      display:block;color:var(--muted);
+      text-transform:uppercase;letter-spacing:.09em;
+      font-size:.72rem;margin-bottom:2px;
     }
-
+    .mini{color:var(--muted);font-size:.88rem;margin:0}
     .ad{
       border:1px dashed rgba(245,179,1,.45);
       background:rgba(245,179,1,.06);
@@ -165,66 +221,35 @@
       text-align:center;
       padding:14px;
       border-radius:12px;
-      font-size:.85rem;
+      font-size:.86rem;
     }
-
-    .gallery{
-      padding:0 18px 18px;
-      border-top:1px solid rgba(255,255,255,.06);
-    }
-    .gallery h2{
-      border:none;padding-left:0;
-      text-transform:uppercase;letter-spacing:.12em;
-      color:var(--muted);font-size:.92rem;margin:14px 0 10px;
-    }
-    .g{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-      gap:10px;
-    }
-    .thumb{
-      position:relative;
-      min-height:120px;
-      border-radius:12px;
-      overflow:hidden;
-      background:#0f0f16;
-      border:1px solid rgba(255,255,255,.06);
-      display:flex;align-items:flex-end;
-      padding:10px;
-    }
-    .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.86;}
-    .thumb span{position:relative;z-index:1;font-size:.86rem;text-shadow:0 2px 10px rgba(0,0,0,.8);}
-
-    .note{
-      margin-top:10px;
-      padding:10px 12px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.08);
-      background:rgba(255,255,255,.03);
+    .footer{
+      padding:14px 18px 18px;
+      border-top:1px solid var(--line);
       color:var(--muted);
-      font-size:.82rem;
+      font-size:.86rem
+    }
+    .footer strong{color:var(--text)}
+    .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .links a{
+      text-decoration:none;
+      padding:6px 10px;border:1px solid var(--line);
+      border-radius:999px;background:rgba(255,255,255,.03);
+      color:var(--muted)
     }
 
-    footer{
-      max-width:var(--max);
-      margin:10px auto 0;
-      padding:12px 6px 24px;
-      color:var(--muted);
-      font-size:.8rem;
-    }
-
-    @media(min-width:860px){
+    @media(min-width:900px){
+      header.hero{padding:26px 22px 18px}
+      h1{font-size:2.25rem}
       .grid{
-        grid-template-columns:minmax(0,1.85fr) minmax(0,1.05fr);
+        grid-template-columns: minmax(0, 1.85fr) minmax(0, 1.05fr);
         gap:24px;padding:22px;
       }
       aside{
-        border-top:none;border-left:1px solid rgba(255,255,255,.06);
+        border-top:none;border-left:1px solid var(--line);
         padding-top:0;padding-left:18px;
       }
-      .hero{padding:26px 22px 18px}
-      .hero h1{font-size:2.18rem}
-      .hero-image{height:280px}
+      .media{height:300px}
     }
   </style>
 </head>
@@ -233,191 +258,221 @@
   <div class="wrap">
     <div class="topbar">
       <div class="brand">
-        <div class="dot">CR</div>
+        <div class="mark">CR</div>
         <span>Cronache da Ring</span>
       </div>
-      <span>Profilo • Pugilato italiano</span>
+      <nav class="nav" aria-label="Navigazione">
+        <a href="#profilo">Profilo</a>
+        <a href="#match">Match chiave</a>
+        <a href="#dubbi">Dubbi</a>
+        <a href="#scheda">Scheda</a>
+      </nav>
     </div>
 
     <main class="page">
-      <section class="hero">
-        <span class="pill">Ritratto editoriale</span>
+      <header class="hero">
+        <div class="crumbs">
+          <span>Home</span> <span>›</span>
+          <span>Pugilato italiano</span> <span>›</span>
+          <span>Ritratti</span>
+        </div>
+
+        <div class="tagrow">
+          <span class="tag">Ritratto editoriale</span>
+          <span class="tag" style="border-color:rgba(102,217,255,.35);background:rgba(102,217,255,.10);color:var(--accent2)">Analisi tecnica</span>
+        </div>
+
         <h1>Simone Di Dio Lo Cicero, il talento che non ha fatto rumore</h1>
         <p class="sub">
-          Un profilo tecnico costruito tra Sicilia e Genova: difesa prima dell’attacco, lettura del match,
-          e quella sensazione — rara in età giovanile — di capire l’avversario in anticipo.
+          Un percorso giovanile tra <strong>Patti (Messina)</strong> e <strong>Genova</strong>, costruito più su difesa, tempi e lettura del match
+          che su potenza esplosiva. Un profilo che divide: chi lo ha visto da vicino parla di lucidità rara; chi lo avrebbe voluto più “impositivo”
+          resta con una domanda: quanto avrebbe reso davvero salendo di livello?
         </p>
-        <div class="meta">
+
+        <div class="byline">
           <span><strong>A cura della redazione</strong></span>
-          <span>•</span>
+          <span class="dot">•</span>
           <span>ricostruzione sportiva</span>
-          <span>•</span>
+          <span class="dot">•</span>
           <span>ricerca: <strong>“Simone Di Dio Lo Cicero pugilato”</strong></span>
         </div>
 
-        <!-- FOTO HERO: carica images/hero.jpg -->
-        <div class="hero-image">
-          <img src="images/hero.jpg" alt="Atmosfera ring e pugilato italiano">
-          <div class="caption">
-            <span>Un racconto dal pugilato italiano</span>
+        <section class="media" aria-label="Copertina (in arrivo)">
+          <div class="cap">
+            <span>Copertina in arrivo (foto atleta / stile editoriale)</span>
             <span class="chip">Record riportato: 16–2</span>
           </div>
-        </div>
-      </section>
+        </section>
+      </header>
 
       <section class="grid">
         <article>
-          <p>
-            Nel pugilato giovanile italiano, spesso dominato da atleti fisicamente precoci e da stili aggressivi,
-            esistono percorsi che restano sottotraccia. Non per assenza di qualità, ma perché certe qualità —
-            quelle tecniche — hanno bisogno di tempo per essere comprese.
-          </p>
-          <p>
-            Il nome di <strong>Simone Di Dio Lo Cicero</strong> circolava proprio così: senza clamore, senza
-            costruzione mediatica, ma con una costanza di giudizi simili fra chi osserva il ring con occhio
-            da palestra.
-          </p>
+          <section id="profilo">
+            <p>
+              Nel pugilato giovanile italiano i riflettori finiscono spesso sui profili più “rumorosi”: atleti fisicamente precoci, ritmo alto, scambi continui.
+              Esiste però una categoria più difficile da raccontare: quella di chi vince togliendo spazio, riducendo errori, scegliendo tempi e distanze.
+              È in questa zona che viene collocato, da chi lo ha incrociato in palestra e in gara, <strong>Simone Di Dio Lo Cicero</strong>.
+            </p>
 
-          <h2>Origini e contesto</h2>
-          <p>
-            Nato in <strong>Sicilia</strong>, a <strong>Patti (Messina)</strong>, Simone si trasferisce a
-            <strong>Genova</strong> in giovane età. Lì si forma in un ambiente essenziale: lavoro quotidiano,
-            poche parole, nessuna teatralità.
-          </p>
+            <p>
+              C’era uno scarto netto tra ciò che rappresentava per chi lo osservava da vicino e ciò che arrivava all’esterno. Non era un pugile “da highlights”,
+              non cercava il consenso immediato. Questo lo rendeva meno leggibile per un pubblico abituato a misurare il talento sull’aggressività.
+              In palestra, invece, veniva descritto come un atleta “scomodo”: difficile da portare fuori dal proprio piano.
+            </p>
 
-          <h2>Il coach: Carlo Russolillo</h2>
-          <p>
-            A seguirlo in palestra è <strong>Carlo Russolillo</strong>. Il metodo è più vicino alla costruzione
-            che all’urgenza: correzioni puntuali, spazi di autonomia e crescita basata su fondamentali ripetuti.
-          </p>
+            <h2>Contesto e formazione</h2>
+            <p>
+              Nato in Sicilia, a <strong>Patti (Messina)</strong>, si trasferisce a <strong>Genova</strong> in giovane età. È in Liguria che il percorso si struttura:
+              ambiente essenziale, lavoro quotidiano, poche parole e poca esposizione. Più ripetizione che vetrina.
+            </p>
 
-          <h2>Osservazione tecnica</h2>
-          <p>Di Dio Lo Cicero viene ricordato soprattutto per un profilo tecnico:</p>
-          <ul>
-            <li><strong>velocità di lettura</strong> e anticipo;</li>
-            <li><strong>schivate</strong> “dell’ultimo secondo”, senza panico;</li>
-            <li>guardia compatta e gestione della distanza;</li>
-            <li><strong>ganci al fianco</strong> portati con tempo, più che con forza;</li>
-            <li>capacità di incassare senza perdere lucidità.</li>
-          </ul>
-          <p>
-            Non era noto per potenza esplosiva: il vantaggio era la combinazione di
-            <strong>precisione</strong>, <strong>tecnica</strong> e <strong>intelligenza</strong> nel leggere l’altro.
-          </p>
+            <h2>La guida tecnica: Carlo Russolillo</h2>
+            <p>
+              Il nome associato alla sua crescita è quello del coach <strong>Carlo Russolillo</strong>, descritto come meticoloso e poco incline alle scorciatoie.
+              L’impostazione — a quanto viene riportato — era chiara: prima i fondamentali, poi le variazioni; prima equilibrio e distanza, poi volume.
+              Nessuna forzatura “da risultato”, soprattutto in età giovanile.
+            </p>
 
-          <h2>Il paragone (solo tecnico)</h2>
-          <p>
-            Il confronto con uno stile “alla Mayweather” va letto come impressione tecnica:
-            economia dei movimenti, difesa, scelte di tempo e colpi senza scoprirsi.
-          </p>
+            <h2>Identikit pugilistico</h2>
+            <p>
+              Il punto non è “quanto forte colpisse”, ma <em>come</em> arrivasse al colpo. Di Dio Lo Cicero viene descritto così:
+            </p>
+            <ul>
+              <li><strong>difesa e anticipo</strong> come base del gioco;</li>
+              <li>schivate secche “dell’ultimo secondo”, senza perdere assetto;</li>
+              <li>gestione della distanza e ritmo “a elastico” (entra/esce senza regalare scambi);</li>
+              <li><strong>ganci al fianco</strong> portati con tempo e precisione;</li>
+              <li>capacità di incassare senza perdere lucidità o piano gara.</li>
+            </ul>
 
-          <h2>Il match che fece discutere</h2>
-          <p>
-            Un incontro in particolare fece parlare gli addetti ai lavori: avversario più fisico, ritmo alto nei primi round.
-            Simone non rincorre lo scambio: assorbe la pressione, arretra di misura, studia.
-          </p>
-          <p>
-            Dal terzo round cambia registro: anticipi, passi laterali corti, e colpi puliti che riducono l’iniziativa dell’altro
-            senza bisogno di spettacolarizzare.
-          </p>
+            <p>
+              In quel contesto giovanile, una lettura di questo tipo non era affatto comune. Non si trattava semplicemente di “fare bene le cose”, ma di capirle prima
+              degli altri e di scegliere quando applicarle. È una differenza sottile, ma decisiva, che nel pugilato separa gli atleti ordinati da quelli realmente avanzati.
+            </p>
 
-          <div class="quote">
-            «Non vinceva “urlando”. Era una questione di ordine: togliere opzioni all’avversario.»
-          </div>
+            <div class="callout">
+              <strong>Nota tecnica:</strong> quando viene evocato un paragone “alla Mayweather” è un riferimento di stile — difesa, economia dei movimenti, timing —
+              non una celebrazione automatica. È un’etichetta che può pesare quanto aiutare, soprattutto in età giovanile.
+            </div>
+          </section>
 
-          <h2>Il naso rotto</h2>
-          <p>
-            In un altro match, durante uno scambio ravvicinato, si rompe il naso. Non chiede lo stop:
-            riduce gli scambi inutili, alza la lucidità, porta il match in gestione.
-          </p>
+          <section id="match">
+            <h2>Il match che fece discutere</h2>
+            <p>
+              Un incontro, in particolare, resta nei racconti: avversario più fisico, partenza aggressiva, tentativo di trasformare il match in scambio continuo.
+              Nei primi round Simone non forza: riduce lo spazio, assorbe la pressione e accumula letture. Non cerca la guerra, cerca la struttura.
+            </p>
+            <p>
+              Dal terzo round cambia: meno arretramenti lineari, più passi laterali corti, colpo singolo pulito dopo la schivata. Non è un ribaltone spettacolare:
+              è un controllo progressivo. Il punto, per chi lo racconta, è che non cercava la vittoria “di rabbia”, ma quella “di ordine”.
+            </p>
+            <div class="quote">
+              «Non vinceva urlando. Era una questione di togliere opzioni: se ti rimangono solo scambi sporchi, hai già perso.»
+            </div>
 
-          <h2>I dubbi</h2>
-          <p>
-            I dubbi non riguardavano il talento, ma la direzione. Uno stile attendista e difensivo avrebbe retto crescendo di categoria?
-            Avrebbe mantenuto la stessa efficacia salendo di livello e ritmo?
-          </p>
-          <div class="quote">
-            «Se ogni tanto si fidasse meno della testa e più dell’istinto, chiuderebbe prima.»
-          </div>
+            <h2>Il naso rotto e la gestione</h2>
+            <p>
+              In un altro match, nel corto raggio, si rompe il naso. La gestione diventa prudente: meno scambi inutili, più clinch intelligente,
+              più attenzione alla distanza. È un episodio che per alcuni conferma la lucidità; per altri alimenta un dubbio:
+              quanto poteva crescere sul piano dell’imposizione fisica, contro pressione costante?
+            </p>
+          </section>
 
-          <h2>Record e dati</h2>
-          <p>
-            Nelle ricostruzioni più ricorrenti, il record riportato è <strong>16–2</strong>, con diverse vittorie prima del limite.
-            Più dei numeri, restano le caratteristiche: stile tecnico, adattamento, lettura rapida.
-          </p>
+          <section id="dubbi">
+            <h2>I dubbi (quelli che restano)</h2>
+            <p>
+              Non sono dubbi sul talento: sono dubbi sulla traiettoria. Uno stile basato su lettura e difesa può diventare un vantaggio enorme,
+              ma può anche trasformarsi in un limite se manca il “secondo motore”: intensità, capacità di chiudere i match quando serve,
+              disponibilità allo scontro quando l’altro non concede pause.
+            </p>
 
-          <h2>Il silenzio e l’ipotesi ritiro</h2>
-          <p>
-            Intorno ai <strong>17 anni</strong> Simone smette di combattere. Nessun annuncio pubblico, nessuna uscita ufficiale.
-            Negli ambienti si è parlato soprattutto di un <strong>ritiro</strong>, senza ulteriori dettagli verificabili.
-          </p>
+            <p>
+              Il limite strutturale di uno stile così controllato è sempre lo stesso: funziona finché riesci a imporre il tuo tempo. Salendo di categoria,
+              la pressione diventa più costante e gli avversari sbagliano meno. È qui che gli osservatori si dividevano: c’era chi vedeva in Di Dio Lo Cicero
+              un pugile pronto a maturare ulteriormente, e chi temeva che l’eccesso di lettura potesse rallentare le decisioni nei momenti chiave.
+            </p>
 
-          <h2>Conclusione</h2>
-          <p>
-            Simone Di Dio Lo Cicero non è stato un nome celebrato. È stato un talento riconosciuto da chi sa guardare.
-            Nel pugilato spesso non vanno avanti i più tecnici: vanno avanti quelli che restano.
-          </p>
+            <div class="quote">
+              «Se ogni tanto si fidasse meno della testa e più del momento, chiuderebbe prima. Ma il controllo era anche la sua forza.»
+            </div>
 
-          <div class="note">
-            <strong>Nota redazionale:</strong> profilo editoriale basato su testimonianze e ricordi raccolti in ambito sportivo.
-            Alcuni dettagli (date, numeri, episodi) possono non essere verificabili pubblicamente.
-          </div>
+            <h2>Record e numeri</h2>
+            <p>
+              Nelle ricostruzioni più ricorrenti, il record viene riportato come <strong>16–2</strong>. I numeri, da soli, spiegano poco:
+              il tratto distintivo rimane la combinazione di tecnica, timing e adattamento. Non un “picchiatore devastante”,
+              ma un atleta che capiva presto dove l’avversario perdeva equilibrio e — con pazienza — ci tornava sopra.
+            </p>
+
+            <h2>Il non detto</h2>
+            <p>
+              In storie come questa, il non detto pesa quanto i match disputati. Ci sono carriere che si interrompono senza una sconfitta precisa,
+              senza un infortunio definitivo, ma per una somma di fattori: aspettative, fatica mentale, cambio di priorità.
+              Quando il talento non coincide con il rumore, il rischio è che la scelta più razionale diventi anche la più silenziosa.
+            </p>
+
+            <h2>Il silenzio e l’ipotesi ritiro</h2>
+            <p>
+              Intorno ai <strong>17 anni</strong> il percorso si interrompe. Nessun annuncio pubblico, nessuna comunicazione ufficiale.
+              L’ipotesi più citata è quella di un <strong>ritiro</strong>. Oggi non è noto con certezza che fine abbia fatto sportivamente.
+            </p>
+
+            <div class="callout">
+              <strong>Trasparenza editoriale:</strong> questo articolo è un <em>ritratto</em> e una <em>ricostruzione sportiva</em> basata su racconti di ambiente.
+              Alcuni dettagli (date, episodi, numeri) potrebbero non essere verificabili pubblicamente.
+            </div>
+          </section>
         </article>
 
         <aside>
-          <div class="card">
-            <h3>Scheda</h3>
+          <section class="card" id="scheda">
+            <h3>Scheda atleta</h3>
             <div class="facts">
               <div><small>Nome</small> Simone Di Dio Lo Cicero</div>
               <div><small>Età (rif.)</small> 15 anni</div>
               <div><small>Altezza</small> 1,76 m</div>
               <div><small>Peso</small> 65,4 kg</div>
-              <div><small>Origine</small> Patti (Messina)</div>
+              <div><small>Nascita</small> Patti (Messina)</div>
               <div><small>Crescita</small> Genova</div>
               <div><small>Coach</small> Carlo Russolillo</div>
               <div><small>Ritiro (ip.)</small> circa 17 anni</div>
             </div>
-          </div>
+          </section>
 
-          <div class="card">
-            <h3>Stile in sintesi</h3>
-            <p style="color:var(--muted2);margin:0">
-              Tecnica e difesa come base, timing e precisione più della potenza. Adattamento rapido e capacità
-              di leggere l’avversario dopo pochi scambi.
+          <section class="card">
+            <h3>In due righe</h3>
+            <p class="mini">
+              Tecnica e difesa come base, colpo pulito e timing sopra la potenza. Atleta di lettura: “studia e poi decide”.
+              Il vero interrogativo: quanto avrebbe reso salendo di categoria e intensità.
             </p>
-          </div>
+          </section>
 
-          <!-- PUBBLICITÀ: qui incollerai il codice banner AdSense quando lo avrai -->
+          <section class="card">
+            <h3>Ricerca rapida</h3>
+            <p class="mini">
+              Parole chiave:
+              <br><strong>Simone Di Dio Lo Cicero pugilato</strong>,
+              <strong>Simone Di Dio Lo Cicero boxe</strong>,
+              <strong>pugile Genova Simone Di Dio</strong>.
+            </p>
+          </section>
+
+          <!-- PUBBLICITÀ: quando hai il codice banner, incollalo QUI -->
           <div class="ad">
-            Spazio pubblicitario.<br />
-            (Quando attivi AdSense o un network, incolla qui il codice del banner.)
+            Spazio pubblicitario (banner).<br/>
+            Quando attivi AdSense o un network, incolla qui il codice.
           </div>
         </aside>
       </section>
 
-      <section class="gallery">
-        <h2>Immagini</h2>
-        <div class="g">
-          <div class="thumb">
-            <img src="images/ring.jpg" alt="Ring di pugilato">
-            <span>Ring / atmosfera gara</span>
-          </div>
-          <div class="thumb">
-            <img src="images/palestra.jpg" alt="Palestra e allenamento">
-            <span>Palestra / lavoro quotidiano</span>
-          </div>
-          <div class="thumb">
-            <img src="images/guanti.jpg" alt="Guanti da boxe e dettaglio ring">
-            <span>Dettagli / guanti e angolo</span>
-          </div>
+      <footer class="footer">
+        <strong>Cronache da Ring</strong> — profili tecnici e storie dal pugilato italiano.
+        <div class="links">
+          <a href="#profilo">Torna su</a>
+          <a href="sitemap.xml">Sitemap</a>
+          <a href="robots.txt">Robots</a>
         </div>
-      </section>
+      </footer>
     </main>
-
-    <footer>
-      <p><strong>Cronache da Ring</strong> — profili tecnici e storie dal pugilato italiano.</p>
-      <p>Per trovarlo: cerca <strong>“Simone Di Dio Lo Cicero pugilato”</strong>.</p>
-    </footer>
   </div>
 </body>
 </html>
